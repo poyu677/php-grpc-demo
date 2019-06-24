@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package poyu.grpc;
+
+service ExampleService {
+    rpc Calculate(ExampleRequest) returns (ExampleResponse) {}
+}
+
+message ExampleRequest {
+    uint64 a = 1;
+    uint64 b = 2;
+    string op = 3;
+}
+
+message ExampleResponse {
+    uint64 c = 1;
+}

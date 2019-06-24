@@ -1,0 +1,10 @@
+{
+    "autoload": {
+        "psr-4": {
+            "": "src/"
+        }
+    },
+    "require": {
+        "spiral/php-grpc": "^1.0"
+    }
+}
